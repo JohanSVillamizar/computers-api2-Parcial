@@ -60,47 +60,6 @@ El modelo que me correspondió hacer en el ERD es `computers`.
 
 ---
 
-## Endpoints principales
-
-> Usa `{{base_url}}` como variable en lugar de escribir la URL completa.
-
-### Listar todos los computadores
-```
-GET {{base_url}}/computers
-```
-
-### Crear un computador
-```
-POST {{base_url}}/computers
-```
-Body en JSON:
-```json
-{
-  "computer_brand": "Dell",
-  "computer_model": "Latitude 7520",
-  "computer_price": 1299.99,
-  "computer_ram_size": 16,
-  "computer_is_laptop": true
-}
-```
-
-### Ver un computador por id
-```
-GET {{base_url}}/computers/{id}
-```
-
-### Actualizar un computador
-```
-PUT {{base_url}}/computers/{id}
-```
-
-### Eliminar un computador
-```
-DELETE {{base_url}}/computers/{id}
-```
-
----
-
 ## Probar con Postman
 
 - Definir la variable de entorno `base_url=http://127.0.0.1:8000/api`.  
